@@ -1,3 +1,5 @@
+# Frontend Readme
+
 The frontend is made using HTML, CSS , Javascript and authentication is done using Firebase.
 
 To run the frontend part(Make sure you have git installed)
