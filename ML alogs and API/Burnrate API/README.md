@@ -1,5 +1,9 @@
 # Burn-Rate_SAP-HACK
 
+In this project we initially perform a comparitive study on various Machine Learning models and how well they perform on your Dataset.
+
+After analysing the results we come to know that the top performing models are Linear Regression and XGBoost with R<sup>2</sup>. Due to high training times taken by
+
 To run this model some python packages are required which can be installed using the given requirements.txt file by entering the following command in the terminal:
 
 ```
