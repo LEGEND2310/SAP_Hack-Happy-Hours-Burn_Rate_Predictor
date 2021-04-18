@@ -1,0 +1,101 @@
+.clickme{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #6441A5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    width: 200px;
+    margin-left: 435px;
+    display: block;
+    text-align: center;
+    
+}
+
+.middle{
+    align-items: center;
+    margin-top: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(189,156,203,1) 0%, rgba(165,79,227,1) 62%);
+font-family: font-family: 'Open Sans', sans-serif;;
+    
+}
+nav{
+    background-color: #4D8EA7;
+    font-weight:bold;
+}
+
+h3{
+    text-align: center;
+}
+
+.brand-logo{
+    color:#6441A5;
+}
+
+.main-content{
+    display: flex;
+  }
+  
+  .text{
+    flex: 1;
+    padding-top: 3rem;
+    color: #4D8EA7;
+    margin-top: 80px;
+  }
+
+  .text h1{
+      font-size: 5rem;
+  }
+
+  .text a{
+    margin-left: -5px;    
+  }
+  
+  .banner{
+    flex: 1;
+    padding-top: 4rem;
+    margin-top: -50px;
+    margin-left: 100px;
+  }
+  
+  .banner img{
+    height: 90%;
+    width: 90%;
+    
+  }
+
+  .rounded-button{
+    
+    width: 250px;
+    padding: 0.7rem 1.5rem;
+    background-color: #4D8EA7;
+    background: #4D8EA7;
+    border: 4px solid #4D8EA7;
+    box-sizing: border-box;
+    border-radius: 17px;
+    text-align: center;
+  }
+  .rounded-button:hover{
+    background-color: #4D8EA7;
+    color: rgb(226, 218, 218);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+.description p{
+    font-size: 3rem;
+}

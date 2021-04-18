@@ -1,0 +1,317 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="home.css">
+  <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/font-style.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/lineandbars.js"></script>
+
+  <!-- <script type="text/javascript" src="js/dash-charts.js"></script> -->
+  <script type="text/javascript" src="js/gauge.js"></script>
+
+  <!-- NOTY JAVASCRIPT -->
+  <script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+  <script type="text/javascript" src="js/noty/layouts/top.js"></script>
+  <script type="text/javascript" src="js/noty/layouts/topLeft.js"></script>
+  <script type="text/javascript" src="js/noty/layouts/topRight.js"></script>
+  <script type="text/javascript" src="js/noty/layouts/topCenter.js"></script>
+
+  <!-- You can add more layouts if you want -->
+  <script type="text/javascript" src="js/noty/themes/default.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/dash-noty.js"></script> This is a Noty bubble when you init the theme-->
+  <!-- <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script> -->
+  <script src="js/jquery.flexslider.js" type="text/javascript"></script>
+
+
+  <title>Tech Enthus</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">
+        SAP-Burn Rate Predictor
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="logged-in">
+          <a href="#" class="white-text modal-trigger" data-target="modal-account">Account</a>
+        </li>
+        <li class="logged-in">
+          <a href="#" class="white-text" id="logout">Logout</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class="white-text modal-trigger" data-target="modal-signup">Sign up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signup-name" required />
+          <label for="signup-name">Your Name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signup-bio" required />
+          <label for="signup-bio">One Line Bio</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ACCOUNT MODAL -->
+  <!-- <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4>Account details</h4><br />
+      <div class="account-details"></div>
+    </div>
+  </div> -->
+
+
+  <!-- <div class="container ">
+    <div class="logged-out middle">
+      <h3>WANT TO KNOW YOUR PERSONALITY ?</h3>
+      <a href="#" class="clickme modal-trigger" data-target="modal-login">Login</a>
+    </div>
+
+  </div> -->
+
+  <div class="container logged-out">
+    <div class="main-content">
+      <div class="text">
+        <div class="description">
+          <h2 style="color: white;">Want to know your employees better?</h2>
+          <h1>Sample project submission for SAP Hack</h1>
+        </div>
+        <br><br>
+        <a href="#" class="rounded-button clickme modal-trigger" data-target="modal-login">Login</a>
+      </div>
+      <div class="banner"><img src="images/svg1.svg" alt="education"></div>
+    </div>
+  </div>
+
+
+  <div class="container logged-in" style="margin-top: 40px;">
+    <div class="row">
+      <div class="col-sm-3 col-lg-3">
+        <div class="dash-unit">
+          <dtitle>User Profile</dtitle>
+          <hr>
+          <div class="thumbnail">
+            <img src="images/face80x80.jpg" alt="Marcel Newman" class="img-circle">
+          </div><!-- /thumbnail -->
+          <h1>
+            <div class="account-details"></div>
+          </h1>
+          <h3 style="text-align: center; color: #E2B370; font-family: sans-serif; font-size: 25px;">HR Manager</h3>
+        </div>
+      </div>
+
+      <!-- DONUT CHART BLOCK -->
+      <div class="col-sm-6 col-lg-6">
+        <div class="" style="margin: auto;">
+
+          <!--<hr>
+          <div id="load"></div>
+          <h2>45%</h2> -->
+          <iframe title="Employee Burnout" aria-label="chart" id="datawrapper-chart-zQWBa"
+            src="https://datawrapper.dwcdn.net/zQWBa/2/" scrolling="no" frameborder="0"
+            style="margin-left: 10%;border: none; border-radius: 2%;" width="80%" height="206"></iframe>
+
+        </div>
+      </div>
+      <!-- DONUT CHART BLOCK -->
+      <!-- <div class="col-sm-3 col-lg-3">
+        <div class="dash-unit">
+        <dtitle>Healthy Employees</dtitle>
+        <hr>
+          <div id="space"></div>
+          <h2>55%</h2>
+        </div>
+      </div> -->
+
+      <div class="col-sm-3 col-lg-3">
+
+        <!-- LOCAL TIME BLOCK -->
+        <div class="half-unit">
+
+          <iframe title="Work From Home" aria-label="Bar Chart" id="datawrapper-chart-RWUyU"
+            src="https://datawrapper.dwcdn.net/RWUyU/3/" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none;" height="134"></iframe>
+          <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+          </script>
+        </div>
+        <div class="half-unit">
+          <iframe title="Gender" aria-label="Bar Chart" id="datawrapper-chart-8IO5w"
+            src="https://datawrapper.dwcdn.net/8IO5w/1/" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none;" height="134"></iframe>
+          <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+          </script>
+
+        </div>
+      </div>
+    </div>
+    <!-- SECOND ROW OF BLOCKS -->
+    <div class="row">
+      <div class="col-sm-3 col-lg-3">
+        <!-- MAIL BLOCK -->
+        <div class="dash-unit">
+          <dtitle>Total Employees</dtitle>
+          <hr>
+          <div class="framemail">
+            <div class="window">
+              <ul class="mail">
+                <li>
+                  <i class="read"></i>
+                  <img class="avatar" src="images/photo01.jpeg" alt="avatar">
+                  <!-- <img class="avatar" src="images/photo01.jpeg" alt="avatar"> -->
+                  <p class="sender">Adam W.</p>
+                  <p style="margin-left: 75px;">Burn Rate : 0.77</p>
+                  <p class="message"><strong>Observed Personality</strong> : INFJ</p>
+
+                </li>
+                <li>
+                  <i class="read"></i>
+                  <img class="avatar" src="images/photo02.jpg" alt="avatar">
+                  <p class="sender">Dani D.</p>
+                  <p style="margin-left: 75px;">Burn Rate : 0.88</p>
+                  <p class="message"><strong>Observed Personality</strong> : ENTP</p>
+
+                </li>
+                <li>
+                  <i class="read"></i>
+                  <img class="avatar" src="images/photo03.jpg" alt="avatar">
+                  <p class="sender">Leonard N.</p>
+                  <p style="margin-left: 75px;">Burn Rate : 0.17</p>
+                  <p class="message"><strong>Observed Personality</strong> : INTP</p>
+
+                </li>
+                <li>
+                  <i class="read"></i>
+                  <img class="avatar" src="images/photo04.jpg" alt="avatar">
+                  <p class="sender">Peter B.</p>
+                  <p style="margin-left: 75px;">Burn Rate : 0.29</p>
+                  <p class="message"><strong>Observed Personality</strong> : INTJ</p>
+
+                </li>
+                <li>
+                  <i class="read"></i>
+                  <img class="avatar" src="images/user-avatar.jpg" alt="avatar">
+                  <p class="sender">Mike T.</p>
+                  <p style="margin-left: 75px;">Burn Rate : 0.55</p>
+                  <p class="message"><strong>Observed Personality</strong> : ENTJ</p>
+
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div><!-- /dash-unit -->
+      </div><!-- /span3 -->
+      <!-- GRAPH CHART - lineandbars.js file -->
+      <div class="col-lg-9">
+        <div class="dash-unit">
+          <iframe title="Burn Rate Distribution" aria-label="Interactive area chart" id="datawrapper-chart-Lb1BV"
+            src="https://datawrapper.dwcdn.net/Lb1BV/1/" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none;" height="344"></iframe>
+          <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+          </script>
+        </div>
+      </div>
+
+    </div><!-- ROW 2 end-->
+
+    <!--Row 3 End-->
+  </div>
+
+
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCjn7neDFTtEfHGfl-IhWsnHimJlFjdAWs",
+      authDomain: "sap-hack-52c1f.firebaseapp.com",
+      projectId: "sap-hack-52c1f",
+      storageBucket: "sap-hack-52c1f.appspot.com",
+      messagingSenderId: "604468801916",
+      appId: "1:604468801916:web:d01e32d1c23abdf4bbb4f9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
