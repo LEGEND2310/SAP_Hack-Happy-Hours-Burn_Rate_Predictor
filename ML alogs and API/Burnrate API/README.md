@@ -5,3 +5,8 @@ To run this model some python packages are required which can be installed using
 ```
 pip install -r requirements.txt
 ```
+
+To run the flask file as local host use the command
+```
+python app.py
+```
