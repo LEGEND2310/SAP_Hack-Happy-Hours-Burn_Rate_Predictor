@@ -1,4 +1,4 @@
-# SAP Hack - Happy Hours - Burn Rate Predictor
+# Code with SAP India - Happy Hours - Burn Rate Predictor
 
 This project is being submitted by the team Tech_Enthus consisting of:
 1) Deepak Kumar Jha ([LEGEND2310](https://github.com/LEGEND2310))
